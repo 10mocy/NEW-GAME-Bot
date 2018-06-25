@@ -14,7 +14,7 @@ RTM.on('message', (event) => {
     
     const message = event.text;
     if(/^進捗/.test(message)) {
-        const imageNumber = Math.floor( Math.random() * 22 + 1) ;
+        const imageNumber = Math.floor( Math.random() * 23 + 1) ;
         RTM.sendMessage("https://raw.githubusercontent.com/nirot1r/NEW-GAME-Bot/master/images/" + imageNumber + ".jpg", event.channel)
             .catch(sendError => console.error(sendError));
     }
